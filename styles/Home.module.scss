@@ -1,0 +1,57 @@
+$link-color: #0070f3;
+$my-link-color: #342f30;
+$border-color: #eaeaea;
+$error-color: red;
+$header-color: beige;
+
+.container {
+  padding: 0 2rem;
+}
+
+.nav {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-bottom: 1px solid $border-color;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $header-color;
+}
+
+.main {
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid $border-color;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: $my-link-color;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.error {
+  color: $error-color;
+}
+
+.link {
+  color: $link-color;
+}
