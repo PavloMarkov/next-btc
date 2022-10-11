@@ -25,9 +25,9 @@ export default function Home() {
       })
 
     const updateBtcValue = () => setEveryHour(prev => prev + 1)
-    const btcTimeout = setTimeout(updateBtcValue, 3600000);
+    const btcTimeout = setInterval(updateBtcValue, 3600000);
 
-    return () => clearTimeout(btcTimeout);
+    return () => clearInterval(btcTimeout);
   }, [everyHour, dispatch]);
 
   const btcValueByCurrency = useSelector(
@@ -55,3 +55,22 @@ export default function Home() {
     </MainLayout>
   )
 }
+
+// Home.getInitialProps = async () => {
+//   const response = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
+//   const respJson = await response.json()
+//       .then(res => {
+//         const Value = {
+//           date: res.time.updateduk,
+//           currencyValue: {
+//             USD: res.bpi.USD.rate,
+//             EUR: res.bpi.EUR.rate,
+//             GBP: res.bpi.GBP.rate
+//           }
+//         }
+//         console.log(newValue);
+//         return {
+//           newValue
+//         }
+//       })
+// }

@@ -4,6 +4,15 @@ $border-color: #eaeaea;
 $error-color: red;
 $header-color: beige;
 
+.body {
+  position: relative;
+  min-height: 100vh;
+}
+
+.page-content {
+  padding-bottom: 84px;
+}
+
 .container {
   padding: 0 2rem;
 }
@@ -34,7 +43,8 @@ $header-color: beige;
   border-top: 1px solid $border-color;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
+  height: 84px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -54,4 +64,12 @@ $header-color: beige;
 
 .link {
   color: $link-color;
+}
+
+.currencyValue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
 }
