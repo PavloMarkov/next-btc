@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-import { MainLayout } from '../components/MainLayout'
+import MainLayout from '../components/MainLayout'
 import styles from '../../styles/Home.module.scss'
 
 import Link from "next/link"
