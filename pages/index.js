@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import styles from '../styles/Home.module.scss'
-import { MainLayout } from './components/MainLayout'
+import MainLayout from './components/MainLayout'
 import { addActualPrice } from '../store/currencySlice'
 
 export default function Home() {

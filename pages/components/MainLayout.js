@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import styles from '../../styles/Home.module.scss'
 
-export function MainLayout ({ children, title = 'test-task' }) {
+export default function MainLayout ({ children, title = 'test-task' }) {
   return (
     <div className={styles.body}>
       <div className={styles['page-content']}>

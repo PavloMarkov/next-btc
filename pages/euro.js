@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.scss'
 import { useSelector } from 'react-redux'
 
 
-import { MainLayout } from './components/MainLayout'
+import MainLayout from './components/MainLayout'
 
 export default function Euro () {
   const btcEuroValue = useSelector(

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from '../styles/Home.module.scss'
-import { MainLayout } from "./components/MainLayout";
+import MainLayout from "./components/MainLayout";
 
 export default function ErrorPage () {
   return (
